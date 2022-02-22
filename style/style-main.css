@@ -1,0 +1,113 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color:white;
+
+}
+
+header .container{  /*container = wrapper(envelopar) */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+header .logo{
+    color: #E50914;
+    font-family: 'Arial Black',Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-suits.jpg');
+
+    height: 768px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px; /*magem para baixo*/
+    max-width: 500px; 
+}
+
+.titulo{
+    margin-top: 15%; /*define a margem superior*/
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    /*font-family define o estilo do texto*/
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50); /*efeito de trasparência*/
+    border:none; /*borda*/
+    color:white;
+
+    padding:15px 30px;  /*margem interna da caixa*/
+    margin-right: 15px; /*margem entre as caixas (para a direita)*/
+    font-size: 12px; /*tamanho da fonte*/
+
+    cursor: pointer; /*altera o cursor*/ 
+    transition: .3s; /*cuida da transição de uma animação para outra*/
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-film{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-filmes{
+    margin-top: 5px;
+    width: 100%;
+    padding: 15px;
+}
+
+.genero{
+    margin:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
